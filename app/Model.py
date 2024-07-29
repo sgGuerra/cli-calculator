@@ -9,7 +9,7 @@ class Calculadora:
     def multiply(self, num_1: float, num_2: float) -> float:  # pistas de tipo
         return num_1 * num_2
 
-    def divida(self, num_1: float, num_2: float) -> float:  # pistas de tipo
+    def divide(self, num_1: float, num_2: float) -> float | str:  # pistas de tipo
         if num_2 == 0:
-            return "Cannor divide by zaro!"
+            return "Cannot divide by zero!"
         return num_1 / num_2
