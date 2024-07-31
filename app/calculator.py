@@ -2,12 +2,14 @@ import click
 
 #varias formas de importar: from
 
-from app.Model import Calculadora
+from app.model import Calculadora
+
+
 @click.group()
 @click.pass_context
 def calc(ctx: click.Context):
     """A simple calculator"""
-    ctx.obj = {"calculator_objetos": Calculadora()}
+    ctx.obj = {"calculator_object": Calculadora()}
 
 
 @click.command()
